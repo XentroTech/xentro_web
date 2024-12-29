@@ -7,12 +7,16 @@ function CustomKartManufacturing() {
         Custom Kart Manufacturing
       </h1>
       <div className=" flex justify-around items-center">
-        <div className="content text-white w-[500px] text-3xl leading-[3rem] text-justify ">
+        <div
+          className="content text-white w-[500px] text-3xl leading-[3rem] text-justify "
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           Our high-performance electric go-karts are eco-friendly,
           technologically advanced, and built for maximum safety and fun for all
           age groups.
         </div>
-        <div className="img">
+        <div className="img" data-aos="fade-left" data-aos-duration="1000">
           <img src={goKart} alt="img" className="w-full h-[400px] rounded-lg" />
         </div>
       </div>

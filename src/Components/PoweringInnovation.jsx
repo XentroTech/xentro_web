@@ -7,7 +7,12 @@ function PoweringInnovation() {
         POWERING INNOVATION, PROFIT AND SUSTAINABILITY
       </h1>
       <div className="flex justify-around items-center p-8">
-        <div className="text">
+        <div
+          className="text"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col gap-4 text-white text-2xl leading-[3rem]">
             <p>
               Eco-Friendly Innovation: State-of-the-art electric go-karts <br />
@@ -31,7 +36,12 @@ function PoweringInnovation() {
             </button>
           </div>
         </div>
-        <div className="img">
+        <div
+          className="img"
+          data-aos="fade-down"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           <img src={track} alt="img" className="w-[700px] rounded-lg" />
         </div>
       </div>

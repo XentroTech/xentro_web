@@ -6,7 +6,12 @@ function AditionalAttraction() {
       <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
         Additional Attractions
       </h1>
-      <div className=" flex justify-around items-center">
+      <div
+        className=" flex justify-around items-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="2000"
+      >
         <div className="content text-white w-[600px] text-3xl leading-[3rem] text-justify ">
           <p>Enhance your facility with additional entertainment options:</p>
           <p>➩ VR Gaming Stations</p>

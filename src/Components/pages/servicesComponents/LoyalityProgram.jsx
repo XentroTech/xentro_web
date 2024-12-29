@@ -6,7 +6,12 @@ function LoyalityProgram() {
       <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
         Loyalty Program
       </h1>
-      <div className=" flex justify-around items-center">
+      <div
+        className=" flex justify-around items-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="2000"
+      >
         <div className="img">
           <img
             src={loyalty}

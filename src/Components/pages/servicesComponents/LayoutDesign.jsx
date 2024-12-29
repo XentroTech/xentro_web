@@ -6,11 +6,19 @@ function LayoutDesign() {
       <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
         Layout Design
       </h1>
-      <div className=" flex justify-around items-center">
+      <div
+        className=" flex justify-around items-center"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="img">
           <img src={layout} alt="img" className="w-full h-[400px] rounded-lg" />
         </div>
-        <div className="content text-white w-[600px] text-3xl leading-[3rem] text-justify ">
+        <div
+          className="content text-white w-[600px] text-3xl leading-[3rem] text-justify "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Our designers create optimized facility layouts that improve:
           <br /> ➩ Space utilization
           <br /> ➩ Traffic flow - Guest experience

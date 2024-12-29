@@ -4,10 +4,22 @@ function KeyHighlights() {
   return (
     <div className="w-full h-screen object-cover bg-indigo-950 p-[3rem] pt-[150px]">
       <div className="flex justify-around items-center p-8">
-        <div className="img">
+        <div
+          className="img"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          // data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
           <img src={keyImg} alt="img" className=" w-[700px] rounded-md" />
         </div>
-        <div className="text-white text-2xl">
+        <div
+          className="text-white text-2xl"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col gap-10">
             <h1 className="text-yellow-300 font-bold text-3xl">
               KEY HIGHLIGHTS

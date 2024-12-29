@@ -6,7 +6,12 @@ function FranchiseModel() {
       <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
         Franchise Model
       </h1>
-      <div className=" flex justify-around items-center">
+      <div
+        className=" flex justify-around items-center"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="1000"
+      >
         <div className="img">
           <img
             src={franchise}
@@ -14,7 +19,12 @@ function FranchiseModel() {
             className="w-full h-[400px] rounded-lg"
           />
         </div>
-        <div className="content text-white w-[600px] text-3xl leading-[3rem]  ">
+        <div
+          className="content text-white w-[600px] text-3xl leading-[3rem]  "
+          data-aos="fade-left"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="1000"
+        >
           <p className="text-justify">
             ➩ Rapid expansion with lower capital expenditure
           </p>

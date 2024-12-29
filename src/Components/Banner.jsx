@@ -20,7 +20,12 @@ function Banner() {
       {/* overlay */}
       <div className="absolute inset-0 bg-indigo-950/60 "></div>
       {/* content */}
-      <div className="relative z-10 w-full h-full flex items-center justify-start pl-[100px] ">
+      <div
+        className="relative z-10 w-full h-full flex items-center justify-start pl-[100px] "
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-center"
+        data-aos-duration="2000"
+      >
         <h1 className="text-justify  text-5xl text-white font-bold leading-[4rem]  ">
           <span className="">
             {" "}

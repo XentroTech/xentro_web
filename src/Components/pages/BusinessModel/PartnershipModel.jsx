@@ -7,7 +7,12 @@ function PartnershipModel() {
       <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
         Partnership Model
       </h1>
-      <div className=" flex justify-around items-center">
+      <div
+        className=" flex justify-around items-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="1000"
+      >
         <div className="content text-white w-[600px] text-3xl leading-[3rem]  ">
           <p className="text-justify">
             ➩ Shared financial burden and reduced investment risk

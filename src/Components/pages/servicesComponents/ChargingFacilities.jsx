@@ -6,7 +6,11 @@ function ChargingFacilities() {
       <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
         Charging Facilities
       </h1>
-      <div className=" flex justify-around items-center">
+      <div
+        className=" flex justify-around items-center"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className="img">
           <img
             src={charging}

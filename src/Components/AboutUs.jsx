@@ -10,7 +10,11 @@ function AboutUs() {
       {/* overlay */}
       <div className="absolute inset-0 bg-indigo-950/90 "></div>
       {/* content */}
-      <div className="relative z-10 w-full h-full flex flex flex-col justify-center items-center">
+      <div
+        className="relative z-10 w-full h-full flex flex flex-col justify-center items-center"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <h1 className="text-3xl text-yellow-300 text-center font-bold p-2">
           ABOUT US
         </h1>

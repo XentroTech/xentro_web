@@ -7,14 +7,18 @@ function TrackConstruction() {
         High Quality Track Construction
       </h1>
       <div className=" flex justify-around items-center">
-        <div className="img">
+        <div className="img" data-aos="fade-right" data-aos-duration="1000">
           <img
             src={construction}
             alt="img"
             className="w-full h-[400px] rounded-lg"
           />
         </div>
-        <div className="content text-white  text-3xl leading-[3rem] text-justify flex flex-col gap-4">
+        <div
+          className="content text-white  text-3xl leading-[3rem] text-justify flex flex-col gap-4"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <p> We offer tailored tracks for diverse audiences:</p>
           <p>➩ Kids Tracks: Safe and fun for young visitors.</p>
           <p>

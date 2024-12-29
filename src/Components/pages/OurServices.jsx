@@ -21,7 +21,12 @@ function OurServices() {
         {/* overlay */}
         <div className="absolute inset-0 bg-indigo-950/80"></div>
         {/* text */}
-        <div className="content relative   ">
+        <div
+          className="content relative   "
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="1500"
+        >
           <h1 className="text-yellow-400 font-bold text-4xl text-center">
             Our Services
           </h1>

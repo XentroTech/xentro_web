@@ -5,7 +5,7 @@ import sajid from "../../assets/sajid.jpg";
 function Cards({ name, designation, about, contact, img }) {
   return (
     <div className="div">
-      <div className="p-5 border rounded-lg shadow text-center text-gray-500 max-w-sm h-[400px]">
+      <div className="p-5  rounded-lg shadow-lg text-center text-gray-500 max-w-sm h-[400px]">
         <img className="w-32 h-32 rounded-full mx-auto" src={img} alt="" />
         <div className="text-sm mt-5">
           <a
