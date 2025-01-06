@@ -1,62 +1,130 @@
-import React from "react";
-import logo from "../assets/logo.png";
-import { Link } from "react-router";
+import { useState } from 'react';
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import logo from '../assets/Logo 2.png';
+import menuItems from './data/menuItems';
+
 function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleMobileSubmenu = (id) => {
+    setOpenSubmenu(openSubmenu === id ? null : id);
+  };
+
   return (
-    <header className="text-gray-600 body-font bg-indigo-950 text-white fixed z-50 w-full p-4">
-      <div className="container mx-auto flex flex-wrap  flex-col md:flex-row justify-between items-center ">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img src={logo} alt="logo" className="h-10" />
+    <div className="mx-auto bg-black fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 py-3 opacity-70">
+  {/* Logo Section */}
+  <div className="flex-shrink-0">
+    <Link to="/"><img src={logo} alt="logo-img" className="h-8 md:h-12 w-auto" /></Link>
+  </div>
 
-          <span className="ml-3 text-xl text-white font-bold">
-            <span className="text-red-500">Xen</span>
-            <span className="text-yellow-500">tro</span>
-          </span>
-        </a>
-        {/* - Comprehensive Entertainment Facility Construction
-   - Electric Go-Kart Manufacturing
-   - Charging Facilities
-   - Track and Facility Layout Design
-   - Feasibility Studies and Additional Attractions
-   - IT Infrastructure and Loyalty Programs */}
-
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
-          <Link to="/" className="mr-5 hover:text-gray-500 cursor-pointer">
-            Home
-          </Link>
-
+  {/* Desktop Menu Section */}
+  <div className="hidden md:flex">
+    <ul className="flex items-center gap-6">
+      {menuItems.map((item) => (
+        <li key={item.id} className="relative group">
           <Link
-            to="/services"
-            className="mr-5 hover:text-gray-500 cursor-pointer"
+            to={item.link || "#"}
+            className="flex items-center gap-2 text-secondary hover:text-primary transition-colors duration-200"
           >
-            Our Services
+            <span className="text-white whitespace-nowrap hover:text-secondary">
+              {item.title}
+            </span>
+            {item.submenu && (
+              <span className="text-white">
+                <FaChevronRight className="group-hover:hidden" />
+                <FaChevronDown className="hidden group-hover:inline" />
+              </span>
+            )}
           </Link>
-          {/* <div className="mr-5 hover:text-gray-900 cursor-pointer"> */}
-          <ul className="md:hidden ">
-            <li>Comprehensive Entertainment Facility Construction</li>
-            <li>Electric Go-Kart Manufacturing</li>
-            <li>Track and Facility Layout Design</li>
-            <li>Track and Facility Layout Design</li>
-            <li>Feasibility Studies and Additional Attractions</li>
-            <li>IT Infrastructure and Loyalty Programs</li>
-          </ul>
-          {/* </div> */}
-          <Link
-            to="/business"
-            className="mr-5 hover:text-gray-500 cursor-pointer"
-          >
-            Business Model
-          </Link>
-          <Link to="/team" className="mr-5 hover:text-gray-500 cursor-pointer">
-            Our Team
-          </Link>
-          <a className="mr-5 hover:text-gray-500 cursor-pointer">
-            More Services
-          </a>
-          <a className="mr-5 hover:text-gray-500 cursor-pointer">Contact Us</a>
-        </nav>
-      </div>
-    </header>
+          {item.submenu && (
+            <ul className="hidden group-hover:block w-[160px] absolute top-full left-0 bg-black text-white py-2 px-4 shadow-lg">
+              {item.submenu.map((subItem) => (
+                <li key={subItem.id} className="py-1">
+                  <Link
+                    to={subItem.link}
+                    className="block text-white hover:text-secondary transition-colors duration-200"
+                  >
+                    {subItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Mobile Menu Section */}
+  <div className="md:hidden flex items-center">
+    <button onClick={toggleMobileMenu} className="text-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+  </div>
+
+  {/* Mobile Dropdown Menu */}
+  {isMobileMenuOpen && (
+    <div className="absolute top-12 left-0 w-full bg-gray-900 p-4 z-40">
+      <ul>
+        {menuItems.map((item) => (
+          <li key={item.id} className="py-2">
+            <div
+              className="flex items-center justify-between text-white hover:text-secondary cursor-pointer"
+              onClick={() => item.submenu && toggleMobileSubmenu(item.id)}
+            >
+              <Link to={item.link || "#"} className="block w-full">
+                {item.title}
+              </Link>
+              {item.submenu && (
+                <span>
+                  {openSubmenu === item.id ? (
+                    <FaChevronDown />
+                  ) : (
+                    <FaChevronRight />
+                  )}
+                </span>
+              )}
+            </div>
+            {item.submenu && openSubmenu === item.id && (
+              <ul className="ml-4 mt-2">
+                {item.submenu.map((subItem) => (
+                  <li key={subItem.id} className="py-1">
+                    <Link
+                      to={subItem.link}
+                      className="block text-secondary hover:text-primary transition-colors duration-200"
+                    >
+                      {subItem.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
   );
 }
 

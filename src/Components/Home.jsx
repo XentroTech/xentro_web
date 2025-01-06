@@ -1,11 +1,9 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Banner from "./Banner";
 import AboutUs from "./AboutUs";
+import Banner from "./Banner";
 import KeyHighlights from "./KeyHighlights";
 import PoweringInnovation from "./PoweringInnovation";
-import Footer from "./Footer";
 import UltimatePower from "./UltimatePower";
+import YourSuccessMadeSimple from "./YourSuccessMadeSimple";
 
 function Home() {
   return (
@@ -15,6 +13,7 @@ function Home() {
       <AboutUs />
       <KeyHighlights />
       <PoweringInnovation />
+      <YourSuccessMadeSimple/>
     </div>
   );
 }

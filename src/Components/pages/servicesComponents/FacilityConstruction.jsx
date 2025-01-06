@@ -1,27 +1,56 @@
-import React from "react";
-import services from "../../../assets/services.png";
+import services from "../../../assets/facility-2.jpg";
+
 function FacilityConstruction() {
   return (
-    <div className="w-full h-screen bg-indigo-950 p-[100px]">
-      <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
-        Facility Construction
-      </h1>
+    <div className="relative w-full min-h-screen bg-gray-900 pt-12">
+      {/* Heading Section */}
+      <div className="text-center text-white px-6 md:px-16 py-8">
+        <h1 className="text-yellow-400 font-bold text-3xl md:text-4xl">
+          FACILITY <span className="text-primary">CONSTRUCTION</span>
+        </h1>
+        <p className="text-base text-gray-400 md:text-lg mt-4">
+          We handle every aspect of building world-class entertainment facilities.
+        </p>
+      </div>
+
+      {/* Content Section */}
       <div
-        className=" flex justify-around items-center"
+        className="relative z-10 flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-16 text-center text-white gap-10 md:gap-16"
         data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        data-aos-duration="1000"
+        data-aos-duration="1500"
       >
-        <div className="img">
+        {/* Image Section */}
+        <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
           <img
             src={services}
-            alt="img"
-            className="w-full h-[400px] rounded-lg"
+            alt="Facility Construction"
+            className="w-full md:w-[600px] rounded-lg shadow-lg"
           />
         </div>
-        <div className="content text-white w-[500px] text-3xl leading-[3rem] text-justify ">
-          We build world-class entertainment facilities, handling everything
-          from design to final construction.
+
+        {/* Text Section */}
+        <div className="md:w-1/2 flex flex-col gap-6 text-md md:text-lg leading-relaxed">
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <p className="text-start text-base md:text-lg">
+                Our team ensures precise planning and execution to deliver
+                cutting-edge entertainment spaces.
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <p className="text-start text-base md:text-lg">
+                From layout design to construction, we prioritize quality and safety.
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <p className="text-start text-base md:text-lg">
+                Tailored solutions to meet your specific business requirements.
+              </p>
+            </div>
+          </div>
+          <button className="mt-6 rounded-md bg-primary px-6 py-3 text-secondary font-semibold w-[200px] mx-auto md:mx-0 hover:bg-secondary/90 transition-colors duration-300">
+            Learn More
+          </button>
         </div>
       </div>
     </div>

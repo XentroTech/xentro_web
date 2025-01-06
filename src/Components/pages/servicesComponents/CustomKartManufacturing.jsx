@@ -1,23 +1,66 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 import goKart from "../../../assets/customKart.png";
+
 function CustomKartManufacturing() {
   return (
-    <div className="w-full h-screen bg-indigo-950 p-[100px]">
-      <h1 className="text-center font-bold text-yellow-400 text-4xl p-[100px]">
-        Custom Kart Manufacturing
-      </h1>
-      <div className=" flex justify-around items-center">
-        <div
-          className="content text-white w-[500px] text-3xl leading-[3rem] text-justify "
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          Our high-performance electric go-karts are eco-friendly,
-          technologically advanced, and built for maximum safety and fun for all
-          age groups.
+    <div className="relative w-full min-h-screen bg-gray-900 pt-12">
+      {/* Heading Section */}
+      <div className="text-center text-white px-6 md:px-16 py-8">
+        <h1 className="text-yellow-400 font-bold text-3xl md:text-4xl">
+          CUSTOM KART <span className="text-primary">MANUFACTURING</span>
+        </h1>
+        <p className="text-base text-gray-400 md:text-lg mt-4">
+          Experience cutting-edge kart manufacturing tailored for all age groups.
+        </p>
+      </div>
+
+      {/* Content Section */}
+      <div
+        className="relative z-10 flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-16 text-center text-white gap-10 md:gap-16"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+      
+
+        {/* Text Section */}
+        <div className="md:w-1/2 flex flex-col gap-6 text-md md:text-lg leading-relaxed">
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-400  text-xl md:text-2xl flex-shrink-0" />
+              <p className="text-start text-base md:text-lg">
+                High-performance electric karts designed for safety and
+                sustainability.
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaCheckCircle className="text-yellow-400  text-xl md:text-2xl flex-shrink-0" />
+              <p className="text-start text-base md:text-lg">
+                Cutting-edge technology ensuring eco-friendliness.
+              </p>
+            </div>
+            <div className="flex items-start gap-3"> 
+              <FaCheckCircle className="text-yellow-400  text-xl md:text-2xl flex-shrink-0" />
+              <p className="text-start text-base md:text-lg">
+                Perfect for all age groups with a focus on maximum fun.
+              </p>
+            </div>
+          </div>
+          <p className="text-start text-base md:text-lg">
+            Our custom karts are engineered for performance, designed for
+            entertainment, and built to last.
+          </p>
+          <button className="mt-6 rounded-md bg-primary px-6 py-3 text-secondary font-semibold w-[200px] mx-auto md:mx-0 hover:bg-yellow-500 transition-colors duration-300">
+            Learn More
+          </button>
         </div>
-        <div className="img" data-aos="fade-left" data-aos-duration="1000">
-          <img src={goKart} alt="img" className="w-full h-[400px] rounded-lg" />
+          {/* Image Section */}
+          <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
+          <img
+            src={goKart}
+            alt="Custom Kart Manufacturing"
+            className="w-full md:w-[600px] rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </div>

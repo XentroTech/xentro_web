@@ -1,41 +1,37 @@
 import React from "react";
-import xentroPic from "../assets/xentro.jpg";
+import goKart from "../assets/videos/0101.mp4";
 
 function Banner() {
   return (
-    <div
-      className="relative w-full h-screen top-0 left-0 bg-cover "
-      style={{
-        backgroundImage: `url(${xentroPic})`,
-        // height: "100%",
-        backgroundPosition: "center",
-        // backgroundSize: "cover",
-      }}
-    >
-      {/* <img
-        src={xentroPic}
-        alt="banner image"
-        className="w-full h-screen left-0 top-o absolute"
-      /> */}
-      {/* overlay */}
-      <div className="absolute inset-0 bg-indigo-950/60 "></div>
-      {/* content */}
+    <div className="relative w-full h-screen top-0 left-0 bg-cover overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-screen object-cover"
+      >
+        <source src={goKart} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gray-900/80"></div>
+
+      {/* Content */}
       <div
-        className="relative z-10 w-full h-full flex items-center justify-start pl-[100px] "
+        className="relative z-10 w-full h-screen flex items-center justify-start pl-[100px]"
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
         data-aos-duration="2000"
       >
-        <h1 className="text-justify  text-5xl text-white font-bold leading-[4rem]  ">
-          <span className="">
-            {" "}
-            Pioneer Electric karting <br /> & Sustainable
-          </span>{" "}
-          <br /> <span className="">Entertainment in Bangladesh</span>
-        </h1>{" "}
-        {/* <button className=" text-white bg-red-400 rounded-lg p-3">
-          Start Your Project Now
-        </button> */}
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold leading-normal md:leading-relaxed lg:leading-loose xl:leading-[4rem]">
+          <span>Pioneer Electric Karting</span> <br />
+          <span>
+            & Sustainable Entertainment <br /> in Bangladesh
+          </span>
+        </h1>
       </div>
     </div>
   );
