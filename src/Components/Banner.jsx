@@ -21,12 +21,12 @@ function Banner() {
 
       {/* Content */}
       <div
-        className="relative z-10 w-full h-screen flex items-center justify-start pl-[100px]"
+        className="relative z-10 w-full h-screen flex items-center justify-start pl-[15px] md:pl-[100px]"
         data-aos="fade-up"
         data-aos-anchor-placement="center-center"
         data-aos-duration="2000"
       >
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold leading-normal md:leading-relaxed lg:leading-loose xl:leading-[4rem]">
+        <h1 className="text-3xl  md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold leading-normal md:leading-relaxed lg:leading-loose xl:leading-[4rem]">
           <span>Pioneer Electric Karting</span> <br />
           <span>
             & Sustainable Entertainment <br /> in Bangladesh

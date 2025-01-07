@@ -11,7 +11,7 @@ function UltimatePower() {
     <div className="bg-gray-900">
       <div className="w-full">
         {/* Hero Section */}
-        <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl pb-4 text-secondary font-bold py-8 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl pb-4 text-secondary font-bold py-8 text-center py-24">
           ULTIMATE <span className="text-primary">PERFORMANCE</span>
         </h1>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-y-8 sm:gap-x-16 bg-gray-900 py-16 px-4">
@@ -34,7 +34,7 @@ function UltimatePower() {
             <img
               src={bg}
               alt="Ultimate Performance"
-              className="w-full h-[450px] rounded-lg shadow-lg"
+              className="w-full h-auto md:h-[350px] rounded-lg shadow-lg"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ function UltimatePower() {
             <img
               src={bg1}
               alt="Electric Power Unit"
-              className="w-full h-[450px] rounded-lg shadow-lg"
+              className="w-full  h-auto md:h-[350px] rounded-lg shadow-lg"
             />
           </div>
           <div

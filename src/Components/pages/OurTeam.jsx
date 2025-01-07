@@ -1,9 +1,17 @@
+import ashrafQr from "../../assets/ashraf-qr.png";
 import ashraf from "../../assets/ashraf.png";
+import eshrakQr from "../../assets/eshrak-qr.png";
 import eshrak from "../../assets/eshrak.png";
+import minarQr from "../../assets/minar-qr.png";
 import minar from "../../assets/Miner.png";
 import parvez from '../../assets/parvez .png';
+// import parvezQr from "../../assets/parvez-qr-code.png";
+import parvezQr from "../../assets/parvez-qr.png";
 import riduan from "../../assets/riduan.png";
+import riduanQr from "../../assets/riduanul-qr.png";
+import rubaiyatQr from "../../assets/rubaiyat-qr.png";
 import rubaiyat from "../../assets/rubaiyat.png";
+import sajidQr from "../../assets/sajid-qr-code.png";
 import sajid from "../../assets/sajid.png";
 import team from "../../assets/team.jpg";
 import Cards from './Cards.jsx';
@@ -16,7 +24,7 @@ const info = [
     name: "Moktadir Sajid",
     designation: "Founder & Managing Director",
     about: "Moktadir Sajid, a vital team player at Xentro, is transforming the entertainment industry with his exceptional leadership and extensive technology experience.",
-    contact: "+880 1703-063331",
+    qr: sajidQr,
     img: sajid,
     email: "sajid@xentrobd.com",
   },
@@ -24,7 +32,7 @@ const info = [
     name: "Thahrim Eshrak",
     designation: "Director of Business Development",
     about: "Thahrim leads Xentro’s strategic growth and brand innovation, ensuring successful partnerships and top-quality delivery.",
-    contact: "+49 176 57870827",
+    qr: eshrakQr,
     img: eshrak,
     email: "eshrak@xentrobd.com",
   },
@@ -32,7 +40,7 @@ const info = [
     name: "Mohammad Sharfuddin",
     designation: "Director Production & R&D",
     about: "Mohammad Sharfuddin, a dedicated team player at Xentro, is transforming the entertainment industry with his exceptional production and R&D expertise. ",
-    contact: "+880 1672 901965",
+    qr: minarQr,
     img: minar,
     email: "sharfuddin@xentrobd.com",
   },
@@ -40,7 +48,7 @@ const info = [
     name: "Khandaker Rubaiyat Islam",
     designation: "Director Marketing & Public relation",
     about: "Khandaker Rubaiyat Islam, a dedicated team player at Xentro, is revolutionizing the entertainment industry with his exceptional marketing and public relations skills. ",
-    contact: "+880 1632-091429",
+    qr: rubaiyatQr,
     img: rubaiyat,
     email: "rubaiyat@xentrobd.com",
   },
@@ -48,7 +56,7 @@ const info = [
     name: "MD. Ashraf Ullah",
     designation: "Flutter Developer",
     about: "Md. Ashraf Ullah is a passionate Flutter developer with a clear vision of driving innovation at Xentro. His dedication is reflected in his commitment to enhancing Xentro's development projects.",
-    contact: "+880 1627 263747",
+    qr: ashrafQr,
     img: ashraf,
     email: "ashraf@xentrobd.com",
   },
@@ -56,7 +64,7 @@ const info = [
     name: "MD. Riduanul Haque",
     designation: "Backend Developer",
     about: "Md. Riduanul Haque is a highly dedicated backend developer at Xentro, committed to improving the company's backend systems and driving innovation.",
-    contact: "+8801794212131",
+    qr: riduanQr,
     img: riduan,
     email: "riduanul@xentrobd.com",
   },
@@ -64,7 +72,7 @@ const info = [
     name: "MD. Parvez Hossen",
     designation: "Production Supervisor/Assistant",
     about: "Md. Parvez Hossen, a highly skilled mechanical engineer at Xentro, brings exceptional expertise and dedication to his work. With a keen eye for detail and a problem-solving mindset.",
-    contact: "+880 1759-713636",
+    qr: parvezQr,
     img: parvez,
     email: "parvez@xentrobd.com",
   },
@@ -87,8 +95,7 @@ function OurTeam() {
         name={member.name}
         designation={member.designation}
         about={member.about}
-        contact={member.contact}
-        img={member.img}
+        qr={member.qr}        img={member.img}
         email={member.email}
       />
     ))}

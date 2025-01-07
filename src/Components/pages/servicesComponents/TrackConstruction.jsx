@@ -23,20 +23,20 @@ function TrackConstruction() {
 
         {/* Content Section */}
         <div
-          className="content text-white text-center md:text-left w-full md:w-[50%] text-base md:text-lg leading-7 md:leading-8"
+          className="content text-white md:text-left w-full md:w-[50%] text-base md:text-lg leading-7 md:leading-8"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
-          <p>We offer tailored tracks for diverse audiences:</p>
+          <p className="text-slate-400">We offer tailored tracks for diverse audiences:</p>
           <ul className="list-none mt-4 space-y-4">
             <li className="flex items-center gap-3">
-              <FaArrowCircleRight className="text-yellow-400" /> Kids Tracks: Safe and fun for young visitors.
+              <FaArrowCircleRight className="text-secondary" /> Kids Tracks: Safe and fun for young visitors.
             </li>
             <li className="flex items-center gap-3">
-              <FaArrowCircleRight className="text-yellow-400" /> Fun Tracks: Casual racing thrills for families and beginners.
+              <FaArrowCircleRight className="text-secondary flex-shrink-0" /> Fun Tracks: Casual racing thrills for families and beginners.
             </li>
             <li className="flex items-center gap-3">
-              <FaArrowCircleRight className="text-yellow-400" /> Thrill Tracks: Adrenaline-filled layouts for racing enthusiasts.
+              <FaArrowCircleRight className="text-secondary flex-shrink-0" /> Thrill Tracks: Adrenaline-filled layouts for racing enthusiasts.
             </li>
           </ul>
           <div className="mt-8 flex justify-center md:justify-start">

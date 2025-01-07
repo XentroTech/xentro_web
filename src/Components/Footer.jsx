@@ -5,10 +5,10 @@ import logo from "../assets/Logo 1.png";
 function Footer() {
   return (
     <footer className="bg-black">
-      <div className="container mx-auto px-6 pb-6 pt-16 sm:px-12 lg:px-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.5fr,1fr,1fr,1fr] md:gap-8 gap-6 justify-center items-start">
+      <div className="container mx-auto px-6 pb-6 pt-16 sm:px-12 lg:px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[1.5fr,1fr,1fr,1fr] md:gap-8 gap-6 justify-center items-center md:items-start">
   {/* Logo and About Section */}
-  <div className="text-start lg:text-left">
+  <div className="text-center flex flex-col  justify-center md:justify-start items-center md:items-start md:text-left">
     <div className="flex-shrink-0">
       <img src={logo} alt="logo" className="w-24 h-24" />
     </div>
@@ -60,13 +60,13 @@ function Footer() {
   </div>
 
   {/* Links Section */}
-  <div>
+  <div className="text-center md:text-start" >
     <h3 className="text-lg font-medium text-secondary">About Us</h3>
     <ul className="mt-4 space-y-2">
       <li>
-        <a href="#" className="text-white hover:text-primary transition">
+        <Link href="/company-history" className="text-white hover:text-primary transition">
           Company History
-        </a>
+        </Link>
       </li>
       <li>
         <Link to="/team" className="text-white hover:text-primary transition">
@@ -74,19 +74,19 @@ function Footer() {
         </Link>
       </li>
       <li>
-        <a href="#" className="text-white hover:text-primary transition">
+        <Link to="/career" className="text-white hover:text-primary transition">
           Careers
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/faq" className="text-white hover:text-primary transition">
+        <Link to="/faq" className="text-white hover:text-primary transition">
           FAQ
-        </a>
+        </Link>
       </li>
     </ul>
   </div>
 
-  <div>
+  <div className="text-center md:text-start">
     <h3 className="text-lg font-medium text-secondary">Our Services</h3>
     <ul className="mt-4 space-y-2">
       <li>
@@ -124,25 +124,25 @@ function Footer() {
     </ul>
   </div>
 
-  <div>
+  <div className="text-center md:text-start">
     <h3 className="text-lg font-medium text-secondary">Contact Us</h3>
     <ul className="mt-4 space-y-2">
-      <li className="flex items-center">
+      <li className="flex items-center justify-center md:justify-start ">
         <FaPhoneAlt className="text-white mr-2" />
         <span className="text-white">+880 1911-682447</span>
       </li>
-      <li className="flex items-center">
+      <li className="flex items-center justify-center md:justify-start">
         <FaEnvelope className="text-white mr-2" />
         <span className="text-white">support@xentrobd.com</span>
       </li>
-      <li className="flex items-start">
-        <FaLocationArrow className="text-white mr-2 text-2xl" />
+      <li className="flex items-start justify-center md:items-start">
+        <FaLocationArrow className="text-white mr-2  text-lg md:text-3xl" />
         <address className="not-italic text-white">
           CTG Office: Plot 379, Khulshi Colony, Nasirabad 1/A, Chittagong.
         </address>
       </li>
-      <li className="flex items-start">
-        <FaLocationArrow className="text-white mr-2 text-2xl" />
+      <li className="flex items-start justify-center md:items-start">
+        <FaLocationArrow className="text-white mr-2 text-xl md:text-4xl" />
         <address className="not-italic text-white">
           Dhaka Office: House 512, Road No-7, Avenue 4, Mirpur DOHS 1216,
           Dhaka.
@@ -155,9 +155,9 @@ function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-12 border-t border-gray-700 pt-6">
+        <div className="mt-12 border-t border-gray-700 p-6 pt-2">
           <div className="flex flex-col sm:flex-row justify-between text-center text-sm text-gray-500">
-            <p>&copy; 2024 Xentrobd. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Xentrobd. All rights reserved.</p>
             <p>
               <a href="#" className="text-white underline hover:text-primary transition">Terms & Conditions</a>
               <span className="mx-2">&middot;</span>

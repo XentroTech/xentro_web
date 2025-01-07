@@ -2,7 +2,7 @@ import charging from "../../../assets/charging.png";
 
 function ChargingFacilities() {
   return (
-    <div id="charging" className="w-full h-screen bg-gray-900 px-6 md:px-[100px] py-[50px]">
+    <div id="charging" className="w-full h-auto bg-gray-900 px-6 md:px-[100px] py-[50px]">
       <h1 className="text-center font-bold text-yellow-400 text-3xl md:text-4xl pb-[100px]">
         Charging <span className="text-primary">Facilities</span>
       </h1>
@@ -16,7 +16,7 @@ function ChargingFacilities() {
           <img
             src={charging}
             alt="Charging Facilities"
-            className="w-full h-[400px] rounded-lg shadow-lg"
+            className="w-full h-auto md:h-[400px] rounded-lg shadow-lg"
           />
         </div>
 

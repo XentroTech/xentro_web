@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { Route, BrowserRouter as Router, Routes, } from "react-router";
 import FAQ from "./Components/Faq";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
@@ -14,7 +14,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router>
       <ScrollToTop/>
         <div >
           <Navbar />
@@ -30,7 +30,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

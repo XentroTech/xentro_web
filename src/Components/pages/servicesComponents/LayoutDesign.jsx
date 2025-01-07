@@ -45,7 +45,7 @@ function LayoutDesign() {
           <img
             src={layout}
             alt="Layout Design"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-[auto] md:h-[400px] rounded-lg shadow-lg"
           />
         </div>
       </div>
