@@ -3,14 +3,14 @@ import goKart from "../assets/videos/0101.mp4";
 
 function Banner() {
   return (
-    <div className="relative w-full h-screen top-0 left-0 bg-cover overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-screen object-cover"
+        className="absolute inset-0 w-full h-screen object-cover overflow-hidden"
       >
         <source src={goKart} type="video/mp4" />
         Your browser does not support the video tag.

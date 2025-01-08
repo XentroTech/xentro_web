@@ -25,6 +25,7 @@ export default {
           "2xl":"6rem"
 
         },
+        
         animation: {
           fadeIn: "fadeIn 2s ease-in-out",
           scroll: "scroll 30s linear infinite",

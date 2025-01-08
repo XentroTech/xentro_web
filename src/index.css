@@ -10,7 +10,9 @@
     @apply font-body;
     margin: 0;
     padding: 0;
+    width: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   h1,
@@ -18,6 +20,9 @@
   h3,
   h4 {
     @apply font-heading;
+  }
+  * {
+    box-sizing: border-box;
   }
 }
 

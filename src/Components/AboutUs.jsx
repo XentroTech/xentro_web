@@ -7,8 +7,8 @@ function AboutUs() {
       className="relative w-full min-h-screen bg-cover bg-center py-12"
       style={{ backgroundImage: `url(${aboutUs})` }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-80"></div>
+      {/* Overlay */} 
+      <div className="absolute inset-0 bg-black opacity-80 w-full"></div>
       
       {/* Content */}
       <div

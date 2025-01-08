@@ -159,9 +159,9 @@ function Footer() {
           <div className="flex flex-col sm:flex-row justify-between text-center text-sm text-gray-500">
             <p>&copy; {new Date().getFullYear()} Xentrobd. All rights reserved.</p>
             <p>
-              <a href="#" className="text-white underline hover:text-primary transition">Terms & Conditions</a>
+              <a href="#" className="text-white underline hover:text-secondary transition">Terms & Conditions</a>
               <span className="mx-2">&middot;</span>
-              <a href="#" className="text-white underline hover:text-primary transition">Privacy Policy</a>
+              <a href="#" className="text-white underline hover:text-secondary transition">Privacy Policy</a>
             </p>
           </div>
         </div>

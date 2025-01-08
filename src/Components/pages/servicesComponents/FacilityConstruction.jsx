@@ -2,7 +2,7 @@ import services from "../../../assets/facility-2.jpg";
 
 function FacilityConstruction() {
   return (
-    <div className="relative w-full min-h-screen bg-gray-900 pt-12">
+    <div className="relative w-full min-h-screen bg-gray-900 pt-12" id="facility">
       {/* Heading Section */}
       <div className="text-center text-white px-6 md:px-16 py-8">
         <h1 className="text-yellow-400 font-bold text-3xl md:text-4xl">
