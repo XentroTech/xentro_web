@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronRight, FaTimes } from "react-icons/fa";
-import { Link } from "react-router";
+import { HashLink as Link } from "react-router-hash-link";
 import logo from "../assets/Logo 2.png";
 import menuItems from "./data/menuItems";
 
@@ -15,7 +15,7 @@ function Navbar() {
   const toggleMobileSubmenu = (id) => {
     setOpenSubmenu(openSubmenu === id ? null : id);
   };
-
+  console.log(menuItems);
   return (
     <div className="mx-auto bg-black fixed top-0 left-0 w-[375px] md:w-full z-50 flex items-center justify-between px-6 md:px-12 py-3 opacity-70">
       {/* Logo Section */}
