@@ -8,13 +8,13 @@ AOS.init();
 
 function UltimatePower() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 py-12">
       <div className="w-full">
         {/* Hero Section */}
         <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl pb-4 text-secondary font-bold py-8 text-center py-24">
           ULTIMATE <span className="text-primary">PERFORMANCE</span>
         </h1>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-y-8 sm:gap-x-16 bg-gray-900 py-16 px-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-x-12 gap-y-8 sm:gap-x-16 bg-gray-900 py-24 px-4">
           <div
             className="text max-w-md"
             data-aos="fade-right"
@@ -34,13 +34,13 @@ function UltimatePower() {
             <img
               src={bg}
               alt="Ultimate Performance"
-              className="w-full h-auto md:h-[350px] rounded-lg shadow-lg"
+              className="w-full h-auto md:h-[350px] xl:h-[450px] rounded-lg shadow-lg"
             />
           </div>
         </div>
 
         {/* Electric Power Unit Section */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-y-8 sm:gap-x-16 bg-gray-900 py-16 px-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-y-8 sm:gap-x-16 bg-gray-900 py-16 xl:py-24 px-4">
           <div
             className="img w-full sm:max-w-md md:max-w-lg lg:max-w-md xl:max-w-lg"
             data-aos="fade-up"
@@ -51,7 +51,7 @@ function UltimatePower() {
             <img
               src={bg1}
               alt="Electric Power Unit"
-              className="w-full  h-auto md:h-[350px] rounded-lg shadow-lg"
+              className="w-full  h-auto md:h-[350px] xl:h-[450px] rounded-lg shadow-lg"
             />
           </div>
           <div
@@ -62,7 +62,8 @@ function UltimatePower() {
             data-aos-duration="1000"
           >
             <h1 className="text-secondary font-bold text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl pb-4 flex items-center gap-x-2">
-              <FaBolt className="text-primary text-2xl" /> Electric <span className="text-primary">Power Unit</span>
+              <FaBolt className="text-primary text-2xl" /> Electric{" "}
+              <span className="text-primary">Power Unit</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl text-gray-400 leading-relaxed">
               Enjoy the simplicity of Plug and Play, fitting any standard racing

@@ -1,13 +1,11 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import successImg from "../assets/success.jpg";
 
 function YourSuccessMadeSimple() {
   return (
-    <div
-      className="relative w-full min-h-screen bg-cover bg-center bg-gray-900 pt-12"
-    >
+    <div className="relative w-full min-h-screen bg-cover bg-center bg-gray-900 pt-12">
       {/* Heading Section */}
       <div className="text-center text-white px-6 md:px-16 py-8">
         <h1 className="text-secondary font-bold text-3xl md:text-4xl">
@@ -35,7 +33,7 @@ function YourSuccessMadeSimple() {
         </div>
 
         {/* Text Section */}
-        <div className="md:w-1/2 flex flex-col gap-6 text-md md:text-lg leading-relaxed">
+        <div className="md:w-1/2 flex flex-col gap-6 text-sm sm:text-md md:text-lg leading-relaxed">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <FaCheckCircle className="text-secondary text-2xl" />
@@ -51,13 +49,15 @@ function YourSuccessMadeSimple() {
             </div>
             <div className="flex items-center gap-3">
               <FaCheckCircle className="text-secondary text-2xl" />
-              <p className="text-base">Post-Launch Support & Marketing Guidance</p>
+              <p className="text-base">
+                Post-Launch Support & Marketing Guidance
+              </p>
             </div>
           </div>
           <p className="text-base md:text-lg text-start">
-            With <span className="text-primary font-semibold">Xentro</span>, your
-            journey to owning a profitable entertainment business is smooth and
-            stress-free.
+            With <span className="text-primary font-semibold">Xentro</span>,
+            your journey to owning a profitable entertainment business is smooth
+            and stress-free.
           </p>
           <button className="mt-6 rounded-md bg-primary px-6 py-3 text-secondary font-semibold w-[200px] hover:bg-red-600 transition-colors duration-300">
             <Link to="/services">LEARN MORE</Link>

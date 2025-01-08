@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    booking: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    booking: "",
   });
 
   const handleChange = (e) => {
@@ -19,15 +19,22 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
-    <div className="bg-gray-900  p-8 rounded-lg shadow-lg max-w-full mx-auto lg:p-12">
-      <h2 className="text-3xl text-gray-400 text-center font-semibold mb-6">Ask What You wanted to Know</h2>
+    <div className="bg-gray-900  p-8 rounded-lg shadow-lg max-w-full mx-auto lg:p-12 md:w-[80%] xl:w-[70%] ">
+      <h2 className="text-3xl text-gray-400 text-center font-semibold mb-6">
+        Ask What You wanted to Know
+      </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-gray-400 text-sm font-medium mb-2">Your Name</label>
+          <label
+            htmlFor="name"
+            className="block text-gray-400 text-sm font-medium mb-2"
+          >
+            Your Name
+          </label>
           <input
             type="text"
             id="name"
@@ -41,7 +48,12 @@ function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-gray-400 text-sm font-medium mb-2">Your Email</label>
+          <label
+            htmlFor="email"
+            className="block text-gray-400 text-sm font-medium mb-2"
+          >
+            Your Email
+          </label>
           <input
             type="email"
             id="email"
@@ -55,7 +67,12 @@ function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-gray-400 text-sm font-medium mb-2">Phone </label>
+          <label
+            htmlFor="phone"
+            className="block text-gray-400 text-sm font-medium mb-2"
+          >
+            Phone{" "}
+          </label>
           <input
             type="tel"
             id="phone"
@@ -67,9 +84,13 @@ function ContactForm() {
           />
         </div>
 
-
         <div>
-          <label htmlFor="message" className="block text-gray-400 text-sm font-medium mb-2">Message</label>
+          <label
+            htmlFor="message"
+            className="block text-gray-400 text-sm font-medium mb-2"
+          >
+            Message
+          </label>
           <textarea
             id="message"
             name="message"

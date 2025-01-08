@@ -5,10 +5,11 @@ function AditionalAttraction() {
   return (
     <div className="w-full h-auto bg-gray-900 px-6 md:px-[100px] py-[100px]">
       <h1 className="text-center font-bold text-3xl md:text-4xl pb-[100px]">
-        <span className="text-secondary">Additional</span> <span className="text-primary">Attractions</span>
+        <span className="text-secondary">Additional</span>{" "}
+        <span className="text-primary">Attractions</span>
       </h1>
       <div
-        className="flex flex-col md:flex-row justify-between items-center gap-10"
+        className="flex flex-col md:flex-row justify-between items-around gap-10"
         data-aos="fade-up"
         data-aos-duration="2000"
       >
@@ -42,7 +43,7 @@ function AditionalAttraction() {
               <FaMountain className="text-yellow-400" /> Indoor Rock Climbing
             </li>
             <li className="flex items-center gap-3">
-              <FaDesktop  className="text-yellow-400" /> Arcade Zones
+              <FaDesktop className="text-yellow-400" /> Arcade Zones
             </li>
           </ul>
           <div className="mt-8 flex justify-center md:justify-start">
@@ -51,8 +52,6 @@ function AditionalAttraction() {
             </button>
           </div>
         </div>
-
-        
       </div>
     </div>
   );

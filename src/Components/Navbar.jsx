@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { FaChevronDown, FaChevronRight, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import logo from '../assets/Logo 2.png';
-import menuItems from './data/menuItems';
+import { useState } from "react";
+import { FaChevronDown, FaChevronRight, FaTimes } from "react-icons/fa";
+import { Link } from "react-router";
+import logo from "../assets/Logo 2.png";
+import menuItems from "./data/menuItems";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,10 +17,12 @@ function Navbar() {
   };
 
   return (
-    <div className="mx-auto bg-black fixed top-0 left-0 w-[360px] md:w-full z-50 flex items-center justify-between px-6 md:px-12 py-3 opacity-70">
+    <div className="mx-auto bg-black fixed top-0 left-0 w-[375px] md:w-full z-50 flex items-center justify-between px-6 md:px-12 py-3 opacity-70">
       {/* Logo Section */}
       <div className="flex-shrink-0">
-        <Link to="/"><img src={logo} alt="logo-img" className="h-8 md:h-12 w-auto" /></Link>
+        <Link to="/">
+          <img src={logo} alt="logo-img" className="h-8 md:h-12 w-auto" />
+        </Link>
       </div>
 
       {/* Desktop Menu Section */}
@@ -62,7 +64,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu Section */}
-      <div className="md:hidden flex items-center">
+      <div className="md:hidden flex items-center ">
         <button onClick={toggleMobileMenu} className="text-white">
           {isMobileMenuOpen ? (
             <FaTimes className="h-6 w-6" />
@@ -87,7 +89,7 @@ function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-12 left-0 right-0 w-full bg-gray-900 p-4 z-40">
+        <div className="absolute top-12 left-0 right-0 max-w-full bg-gray-900 p-4 z-40">
           <ul>
             {menuItems.map((item) => (
               <li key={item.id} className="py-2">
