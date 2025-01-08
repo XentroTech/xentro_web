@@ -27,7 +27,7 @@ function Banner() {
         data-aos-duration="2000"
       >
         <h1 className="text-3xl  md:text-3xl lg:text-4xl xl:text-5xl text-white font-bold leading-normal md:leading-relaxed lg:leading-loose xl:leading-[4rem]">
-          <span>Pioneer Electric Karting</span> <br />
+          <span>Pioneering Electric Karting</span> <br />
           <span>
             & Sustainable Entertainment <br /> in Bangladesh
           </span>
