@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGlassCheers, FaPeopleCarry } from "react-icons/fa";
-import event from "../../../assets/event.webp";
+import event from "../../../assets/event.jpg";
 
 function EventsCorporatePackages() {
   return (
@@ -11,7 +11,8 @@ function EventsCorporatePackages() {
           EVENTS & <span className="text-primary">CORPORATE PACKAGES</span>
         </h1>
         <p className="text-base text-gray-400 md:text-lg mt-4">
-          Host memorable corporate events and team-building sessions with customized packages.
+          Host memorable corporate events and team-building sessions with
+          customized packages.
         </p>
       </div>
 
@@ -24,16 +25,18 @@ function EventsCorporatePackages() {
         {/* Text Section */}
         <div className="md:w-1/2 flex flex-col gap-6 text-md md:text-lg leading-relaxed">
           <div className="space-y-4">
-          <div className="flex items-start gap-3">
-            <FaGlassCheers className="text-yellow-400 text-2xl" /> 
-            <p className="text-start text-base md:text-lg">
-              Host corporate events, team-building sessions, and birthday parties.
-            </p>
-          </div>
+            <div className="flex items-start gap-3">
+              <FaGlassCheers className="text-yellow-400 text-2xl" />
+              <p className="text-start text-base md:text-lg">
+                Host corporate events, team-building sessions, and birthday
+                parties.
+              </p>
+            </div>
             <div className="flex items-start gap-3">
               <FaPeopleCarry className="text-yellow-400 text-2xl" />
               <p className="text-start text-base md:text-lg">
-                Custom packages ensure memorable group experiences and additional revenue streams.
+                Custom packages ensure memorable group experiences and
+                additional revenue streams.
               </p>
             </div>
           </div>
@@ -41,7 +44,7 @@ function EventsCorporatePackages() {
             Learn More
           </button>
         </div>
-        
+
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
           <img

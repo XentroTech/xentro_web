@@ -11,6 +11,10 @@ import riduan from "../../assets/riduan.png";
 import riduanQr from "../../assets/riduanul-qr.png";
 import rubaiyatQr from "../../assets/rubaiyat-qr.png";
 import rubaiyat from "../../assets/rubaiyat.png";
+import shoba from "../../assets/shoba.png";
+import wahidQr from "../../assets/wahid-qr.png";
+import wahid from "../../assets/wahid.png";
+import shobaQr from "../../assets/shoba-qr.png";
 import sajidQr from "../../assets/sajid-qr-code.png";
 import sajid from "../../assets/sajid.png";
 import team from "../../assets/team.jpg";
@@ -81,6 +85,24 @@ const info = [
     qr: parvezQr,
     img: parvez,
     email: "parvez@xentrobd.com",
+  },
+  {
+    name: "Alifuzzaman Shoba",
+    designation: "Public Relations Manager",
+    about:
+      "Alifuzzaman Shoba, a dedicated Public Relations Manager, specializes in fostering strong relationships and delivering impactful communication solutions.",
+    qr: shobaQr,
+    img: shoba,
+    email: "shoba@xentrobd.com",
+  },
+  {
+    name: "Wahid Rayhan",
+    designation: "Public Relations Manager",
+    about:
+      "Wahid Rayhan, a dynamic and results-driven Public Relations Manager, excels at forging meaningful connections and crafting impactful communication strategies. ",
+    qr: wahidQr,
+    img: wahid,
+    email: "wahid@xentrobd.com",
   },
 ];
 

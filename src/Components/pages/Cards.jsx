@@ -15,16 +15,16 @@ function Cards({ name, designation, about, qr, img, email }) {
           <p className="text-sm text-gray-300">{designation}</p>
         </div>
       </div>
-      <div className="px-6 py-4 bg-slate-700 h-[220px] text-center flex flex-col justify-between">
+      <div className="px-6 py-4 bg-slate-700 h-[250px] text-center flex flex-col justify-between">
         {/* About Section */}
         <p className="text-gray-400 text-sm mb-4 text-justify">{about}</p>
 
         {/* QR and Email Section */}
-        <div className="mt-4">
-          <div className="flex items-center justify-center space-x-4">
+        <div className="">
+          <div className="flex flex-col items-center justify-center space-x-4">
             {/* QR Section */}
             <img
-              className="h-[60px] w-[60px] rounded-lg"
+              className="h-[80px] w-[80px] rounded-lg"
               src={qr}
               alt={`${name} QR Code`}
             />
