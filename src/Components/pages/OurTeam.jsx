@@ -52,7 +52,7 @@ const info = [
   },
   {
     name: "Khandaker Rubaiyat Islam",
-    designation: "Director Marketing & Public relation",
+    designation: "Director Marketing ",
     about:
       "Khandaker Rubaiyat Islam, a dedicated team player at Xentro, is revolutionizing the entertainment industry with his exceptional marketing and public relations skills. ",
     qr: rubaiyatQr,
